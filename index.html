@@ -43,6 +43,17 @@ html,body{width:100%;min-height:100vh;background:#fdf8f4;font-family:'Noto Serif
 .venue-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:#3d2316;margin-bottom:6px}
 .venue-detail{font-size:12.5px;color:#8a5d4a;line-height:1.8;letter-spacing:0.04em}
 .map-btn{display:inline-block;margin-top:14px;padding:9px 24px;border:0.5px solid #c49a7a;color:#8a5d4a;font-size:12px;letter-spacing:0.15em;text-decoration:none;border-radius:2px;background:transparent;cursor:pointer;font-family:'Noto Serif KR',serif}
+.transport-wrap{margin-top:22px;text-align:left;display:flex;flex-direction:column;gap:14px}
+.transport-item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:rgba(255,251,248,0.7);border-radius:6px;border:0.5px solid rgba(196,154,122,0.25)}
+.transport-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.transport-body{flex:1}
+.transport-title{font-size:11px;letter-spacing:0.2em;color:#b07a5e;text-transform:uppercase;margin-bottom:5px}
+.transport-desc{font-size:12px;color:#5a3e30;line-height:1.9;letter-spacing:0.03em}
+.transport-desc strong{font-weight:400;color:#3d2316}
+.bus-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:2px;margin-right:4px;letter-spacing:0.05em;vertical-align:middle}
+.bus-tag.general{background:#e8f0e0;color:#4a6a30}
+.bus-tag.trunk{background:#e0eaf8;color:#2a4a80}
+.bus-tag.branch{background:#f0e8f8;color:#5a3a80}
 
 /* rsvp */
 .rsvp-section{padding:32px 24px;text-align:center;background:#fdf8f4}
@@ -127,21 +138,23 @@ html,body{width:100%;min-height:100vh;background:#fdf8f4;font-family:'Noto Serif
 
   <div class="date-section">
     <div class="date-label">Date &amp; Time</div>
-    <div class="date-main">2025 · 09 · 20</div>
+    <div class="date-main">2026 · 08 · 29</div>
     <div class="date-day">토요일 Saturday</div>
-    <div class="time">오후 2시 30분 · 14:30</div>
+    <div class="time">오전 11시 10분 · 11:10</div>
   </div>
 
   <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
 
   <div class="message-section">
     <div class="message-text">
-      서로 다른 두 사람이<br>
-      한 길을 걷기로 했습니다<br><br>
-      <em>소중한 분들을 모시고</em><br>
-      작은 약속을 나누려 합니다<br><br>
-      바쁘신 중에도 자리를 빛내주시면<br>
-      더없는 기쁨이 되겠습니다
+      서로 마주 보며 다져온 사랑을<br>
+      이제 함께 한 곳을 바라보며<br>
+      걸어갈 수 있는 큰 사랑으로<br>
+      키우고자 합니다.<br><br>
+      <em>저희 두 사람이 사랑의 이름으로</em><br>
+      <em>지켜나갈 수 있게</em><br>
+      앞날을 축복해 주시면<br>
+      감사하겠습니다.
     </div>
   </div>
 
@@ -149,13 +162,40 @@ html,body{width:100%;min-height:100vh;background:#fdf8f4;font-family:'Noto Serif
 
   <div class="venue-section">
     <div class="section-label">Venue</div>
-    <div class="venue-name">그랜드 워커힐 서울</div>
+    <div class="venue-name">더 컨벤션 송파문정</div>
     <div class="venue-detail">
-      아카시아홀 2층<br>
-      서울특별시 광진구 워커힐로 177<br>
-      지하철 5호선 광나루역 1번 출구
+      서울특별시 송파구 송파대로 155<br>
+      NH송파농협 건물
     </div>
-    <a class="map-btn" href="https://map.naver.com/v5/search/그랜드워커힐서울" target="_blank">지도 보기 ›</a>
+    <a class="map-btn" href="https://map.naver.com/v5/search/더컨벤션송파문정" target="_blank">지도 보기 ›</a>
+
+    <div class="transport-wrap">
+      <div class="transport-item">
+        <div class="transport-icon">🚇</div>
+        <div class="transport-body">
+          <div class="transport-title">지하철</div>
+          <div class="transport-desc">8호선 문정역 3번 출구<br>도보 5분</div>
+        </div>
+      </div>
+      <div class="transport-item">
+        <div class="transport-icon">🚌</div>
+        <div class="transport-body">
+          <div class="transport-title">버스</div>
+          <div class="transport-desc">
+            <span class="bus-tag general">일반</span> 30, 31, 32, 100, 119, 331<br>
+            <span class="bus-tag trunk">간선</span> 302, 303, 320, 333, 350, 360<br>
+            <span class="bus-tag branch">지선</span> 3322, 3420
+          </div>
+        </div>
+      </div>
+      <div class="transport-item">
+        <div class="transport-icon">🚗</div>
+        <div class="transport-body">
+          <div class="transport-title">자차</div>
+          <div class="transport-desc">네비게이션: <strong>송파구 송파대로 155</strong><br>주차 800대 이상 무료 제공</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
